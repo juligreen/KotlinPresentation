@@ -1,0 +1,14 @@
+#+OPTIONS: num:nil toc:nil
+#+OPTIONS: num:nil toc:nil
+#+REVEAL_TRANS: none
+#+REVEAL_THEME: moon
+#+Title: Magic Mighty Kotlin
+#+Author: Julius Dehner
+#+Email: julius.dehner@gmail.com
+
+
+* 
+[[./images/stackoverflow_hated.png]]
+* Noch was
+** bla
+** blabla
