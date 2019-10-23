@@ -7,8 +7,16 @@
 #+Email: julius.dehner@gmail.com
 
 
-* 
+* Stackoverflow Umfrage 2019
+** Meistverwendete Programmiersprachen
+[[./images/stackoverflow_used.png]]
+** Meistgehasste Programmiersprachen
 [[./images/stackoverflow_hated.png]]
-* Noch was
-** bla
-** blabla
+** Programmiersprachen werden benutzt weil...
+   - ...es für den Use-case keine Alternative gibt (siehe Javascript)
+   - ...sie bereits in einer Firma verwendet werden
+   - ...es ein gutes Ökosystem  gibt (Libraries, IDEs)
+   - ...sie gute Language-Features besitzen
+* Introducing:
+  [[./images/Kotlin.png]]
+** Kotlin compiliert zu JVM-bytecode, Javascript und nativem Code!
