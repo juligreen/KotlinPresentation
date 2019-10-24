@@ -28,6 +28,12 @@
 ** Kotlin compiliert zu JVM-bytecode, Javascript und nativem Code!
    #+ATTR_REVEAL: :frag (roll-in)
    [[./images/pikachu.png]]
+** Leichter Umstieg
+   #+ATTR_REVEAL: :frag (roll-in)
+   - Kotlin unterstützt alle Java-Libraries
+   - Kotlin benutzt die gleichen Build-Systeme
+   - Java- und Kotlin-Files können gleichzeiteig in einem Projekt existieren
+   - IntelliJ Autokonvertierung
 
 * Language Features
 ** String Interpolation
@@ -155,3 +161,68 @@ when (x) {
 
 #+RESULTS:
 : res73: kotlin.String = >>> 
+
+* Live Vergleich
+** Java-Code
+#+BEGIN_SRC java
+  public class Person {
+      private String surName;
+      private String familyName;
+      private int age;
+
+      public Person(String surName, String familyName, int age) {
+	  this.surName = surName;
+	  this.familyName = familyName;
+	  this.age = age;
+      }
+
+      @Override
+      public String toString(){
+	  return this.surName + " " + this.familyName;
+      }
+
+      public String getSurName() {
+	  return surName;
+      }
+
+      public void setSurName(String surName) {
+	  this.surName = surName;
+      }
+
+      public String getFamilyName() {
+	  return familyName;
+      }
+
+      public void setFamilyName(String familyName) {
+	  this.familyName = familyName;
+      }
+
+      public int getAge() {
+	  return age;
+      }
+
+      public void setAge(int age) {
+	  this.age = age;
+      }
+  }
+#+END_SRC
+
+** Kotlin
+#+BEGIN_SRC kotlin
+  class Person(var surName: String?, var familyName: String?, var age: Int) {
+
+      override fun toString(): String {
+	  return this.surName + " " + this.familyName
+      }
+  }
+#+END_SRC
+
+* Danke für die Aufmerksamkeit
+:PROPERTIES:
+:REVEAL_EXTRA_ATTR: data-background-video="videos/there is no need to be upset.mp4" data-background-video-muted="true" data-background-video-loop="true"
+:END:
+
+* Quellen
+ - https://medium.com/@magnus.chatt/why-you-should-totally-switch-to-kotlin-c7bbde9e10d5
+ - https://blog.plan99.net/why-kotlin-is-my-next-programming-language-c25c001e26e3
+ - https://medium.com/pinterest-engineering/kotlin-for-grumpy-java-developers-8e90875cb6ab

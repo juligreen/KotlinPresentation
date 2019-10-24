@@ -26,34 +26,34 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">Magic Mighty Kotlin</h1><h2 class="author">Julius Dehner</h2><p class="date">Created: 2019-10-24 Thu 19:39</p>
+<section id="sec-title-slide"><h1 class="title">Magic Mighty Kotlin</h1><h2 class="author">Julius Dehner</h2><p class="date">Created: 2019-10-24 Thu 21:25</p>
 </section>
 
 
 <section>
-<section id="slide-org562f005">
-<h2 id="org562f005">Stackoverflow Umfrage 2019</h2>
-<div class="outline-text-2" id="text-org562f005">
+<section id="slide-org065a21d">
+<h2 id="org065a21d">Stackoverflow Umfrage 2019</h2>
+<div class="outline-text-2" id="text-org065a21d">
 </div>
 </section>
-<section id="slide-org2d90f8d">
-<h3 id="org2d90f8d">Meistverwendete Programmiersprachen</h3>
+<section id="slide-org9ec4560">
+<h3 id="org9ec4560">Meistverwendete Programmiersprachen</h3>
 
 <div class="figure">
 <p><img src="./images/stackoverflow_used.png" alt="stackoverflow_used.png" />
 </p>
 </div>
 </section>
-<section id="slide-org675b435">
-<h3 id="org675b435">Meistgehasste Programmiersprachen</h3>
+<section id="slide-orgb07f5fe">
+<h3 id="orgb07f5fe">Meistgehasste Programmiersprachen</h3>
 
 <div class="figure">
 <p><img src="./images/stackoverflow_hated.png" alt="stackoverflow_hated.png" />
 </p>
 </div>
 </section>
-<section id="slide-org787ac91">
-<h3 id="org787ac91">Programmiersprachen werden benutzt weil&#x2026;</h3>
+<section id="slide-org66732cb">
+<h3 id="org66732cb">Programmiersprachen werden benutzt weil&#x2026;</h3>
 <ul>
 <li>&#x2026;es für den Use-case keine Alternative gibt (siehe Javascript)</li>
 <li>&#x2026;sie bereits in einer Firma verwendet werden</li>
@@ -64,8 +64,8 @@
 </section>
 </section>
 <section>
-<section id="slide-orgeb54b77">
-<h2 id="orgeb54b77">Introducing:</h2>
+<section id="slide-org9608eeb">
+<h2 id="org9608eeb">Introducing:</h2>
 
 <div class="figure">
 <p><img src="./images/Kotlin.png" alt="Kotlin.png" />
@@ -74,13 +74,13 @@
 </section>
 </section>
 <section>
-<section id="slide-org89fc184">
-<h2 id="org89fc184">Main Features</h2>
-<div class="outline-text-2" id="text-org89fc184">
+<section id="slide-orgc73d507">
+<h2 id="orgc73d507">Main Features</h2>
+<div class="outline-text-2" id="text-orgc73d507">
 </div>
 </section>
-<section id="slide-org4ef9aa9">
-<h3 id="org4ef9aa9">Open Source, entwickelt von Jetbrains</h3>
+<section id="slide-orge3a6664">
+<h3 id="orge3a6664">Open Source, entwickelt von Jetbrains</h3>
 <ul>
 <li class="fragment roll-in">sehr gute IDE-Integration</li>
 <li class="fragment roll-in">Konstante Weiterentwicklung</li>
@@ -88,24 +88,34 @@
 
 </ul>
 </section>
-<section id="slide-org142500f">
-<h3 id="org142500f">Kotlin compiliert zu JVM-bytecode, Javascript und nativem Code!</h3>
+<section id="slide-org8638049">
+<h3 id="org8638049">Kotlin compiliert zu JVM-bytecode, Javascript und nativem Code!</h3>
 
 <div class="figure">
 <p><img src="./images/pikachu.png" alt="pikachu.png" class="fragment (roll-in)" />
 </p>
 </div>
+</section>
+<section id="slide-orgde5a77e">
+<h3 id="orgde5a77e">Leichter Umstieg</h3>
+<ul>
+<li class="fragment roll-in">Kotlin unterstützt alle Java-Libraries</li>
+<li class="fragment roll-in">Kotlin benutzt die gleichen Build-Systeme</li>
+<li class="fragment roll-in">Java- und Kotlin-Files können gleichzeiteig in einem Projekt existieren</li>
+<li class="fragment roll-in">IntelliJ Autokonvertierung</li>
+
+</ul>
 
 </section>
 </section>
 <section>
-<section id="slide-org86942c6">
-<h2 id="org86942c6">Language Features</h2>
-<div class="outline-text-2" id="text-org86942c6">
+<section id="slide-orgd37bf2c">
+<h2 id="orgd37bf2c">Language Features</h2>
+<div class="outline-text-2" id="text-orgd37bf2c">
 </div>
 </section>
-<section id="slide-orgd234430">
-<h3 id="orgd234430">String Interpolation</h3>
+<section id="slide-orgc3d0b12">
+<h3 id="orgc3d0b12">String Interpolation</h3>
 <div class="org-src-container">
 
 <pre  class="src src-kotlin"><code trim><span style="color: #fa9a4b; font-weight: bold;">val</span> <span style="color: #f6f080;">name</span> = <span style="color: #cfe2f2;">"Julius"</span>
@@ -115,12 +125,12 @@ print(<span style="color: #cfe2f2;">"Mein Name ist </span><span style="color: #f
 </div>
 
 <pre class="example">
-Mein Name ist Julius und ich bin 21 Jahre alt. res77: kotlin.String = &gt;&gt;&gt; 
+Mein Name ist Julius und ich bin 21 Jahre alt. res135: kotlin.String = &gt;&gt;&gt; 
 
 </pre>
 </section>
-<section id="slide-orgb8feb58">
-<h3 id="orgb8feb58">Type Inference</h3>
+<section id="slide-orga49881c">
+<h3 id="orga49881c">Type Inference</h3>
 <div class="org-src-container">
 
 <pre  class="src src-kotlin"><code trim><span style="color: #fa9a4b; font-weight: bold;">val</span> <span style="color: #f6f080;">a</span> = <span style="color: #cfe2f2;">"test"</span>
@@ -130,8 +140,8 @@ Mein Name ist Julius und ich bin 21 Jahre alt. res77: kotlin.String = &gt;&gt;&g
 </code></pre>
 </div>
 </section>
-<section id="slide-org0c09a8c">
-<h3 id="org0c09a8c">Equals</h3>
+<section id="slide-orge4a02b2">
+<h3 id="orge4a02b2">Equals</h3>
 <div class="org-src-container">
 
 <pre  class="src src-kotlin"><code trim><span style="color: #fa9a4b; font-weight: bold;">val</span> <span style="color: #f6f080;">a</span> = <span style="color: #72aaca;">Person</span>(<span style="color: #cfe2f2;">"Julius"</span>)
@@ -143,8 +153,8 @@ print(a === b) <span style="color: #798188;">//</span><span style="color: #79818
 </div>
 
 </section>
-<section id="slide-orgf06f62b">
-<h3 id="orgf06f62b">Default Arguments</h3>
+<section id="slide-orgb3fc2bc">
+<h3 id="orgb3fc2bc">Default Arguments</h3>
 <div class="org-src-container">
 
 <pre  class="src src-kotlin"><code trim><span style="color: #fa9a4b; font-weight: bold;">fun</span> <span style="color: #72aaca;">buildFrame</span>(title: <span style="color: #72aaca;">String</span>, width: <span style="color: #72aaca;">Int</span> = 800, height: <span style="color: #72aaca;">Int</span> = 600) {
@@ -156,8 +166,8 @@ print(a === b) <span style="color: #798188;">//</span><span style="color: #79818
 </code></pre>
 </div>
 </section>
-<section id="slide-orgf7e5716">
-<h3 id="orgf7e5716">Java: If/Switch</h3>
+<section id="slide-orga180298">
+<h3 id="orga180298">Java: If/Switch</h3>
 <div class="org-src-container">
 
 <pre  class="src src-java"><code trim><span style="color: #fa9a4b; font-weight: bold;">switch</span>(x) {
@@ -184,8 +194,8 @@ print(a === b) <span style="color: #798188;">//</span><span style="color: #79818
 </code></pre>
 </div>
 </section>
-<section id="slide-org5701fa3">
-<h3 id="org5701fa3">Kotlin: When</h3>
+<section id="slide-orgd4584ef">
+<h3 id="orgd4584ef">Kotlin: When</h3>
 <div class="org-src-container">
 
 <pre  class="src src-kotlin"><code trim><span style="color: #fa9a4b; font-weight: bold;">when</span> (x) {
@@ -199,8 +209,8 @@ print(a === b) <span style="color: #798188;">//</span><span style="color: #79818
 </div>
 
 </section>
-<section id="slide-org014d52d">
-<h3 id="org014d52d">Extension Functions</h3>
+<section id="slide-org418a01c">
+<h3 id="org418a01c">Extension Functions</h3>
 <div class="org-src-container">
 
 <pre  class="src src-kotlin"><code trim><span style="color: #fa9a4b; font-weight: bold;">fun</span> <span style="color: #72aaca;">String.replaceSpaces</span>(): <span style="color: #72aaca;">String</span> {
@@ -213,13 +223,13 @@ print(<span style="color: #cfe2f2;">"</span><span style="color: #f6f080;">$forma
 </div>
 
 <pre class="example">
-This_is_a_test res79: kotlin.String = &gt;&gt;&gt; 
+This_is_a_test res137: kotlin.String = &gt;&gt;&gt; 
 
 </pre>
 
 </section>
-<section id="slide-orgb543eca">
-<h3 id="orgb543eca">Null Safety 1</h3>
+<section id="slide-orgbb45386">
+<h3 id="orgbb45386">Null Safety 1</h3>
 <div class="org-src-container">
 
 <pre  class="src src-kotlin"><code trim><span style="color: #fa9a4b; font-weight: bold;">var</span> <span style="color: #f6f080;">a</span>: <span style="color: #72aaca;">String</span> = <span style="color: #cfe2f2;">"abc"</span>
@@ -232,7 +242,7 @@ a = <span style="color: #b9d977;">null</span>
 a = null               
     ^
 
-res81: kotlin.String = &gt;&gt;&gt; 
+res139: kotlin.String = &gt;&gt;&gt; 
 
 </pre>
 
@@ -244,13 +254,13 @@ b = <span style="color: #b9d977;">null</span>
 </div>
 
 <pre class="example">
-res83: kotlin.String = &gt;&gt;&gt; 
+res141: kotlin.String = &gt;&gt;&gt; 
 
 </pre>
 
 </section>
-<section id="slide-org8219f29">
-<h3 id="org8219f29">Null Safety 2</h3>
+<section id="slide-orgcedcbe8">
+<h3 id="orgcedcbe8">Null Safety 2</h3>
 <div class="org-src-container">
 
 <pre  class="src src-kotlin"><code trim><span style="color: #fa9a4b; font-weight: bold;">val</span> <span style="color: #f6f080;">b</span>: <span style="color: #72aaca;">String?</span> = <span style="color: #cfe2f2;">"test"</span>
@@ -263,7 +273,7 @@ res83: kotlin.String = &gt;&gt;&gt;
 val x = b.length
          ^
 
-res85: kotlin.String = &gt;&gt;&gt; 
+res143: kotlin.String = &gt;&gt;&gt; 
 
 </pre>
 
@@ -277,9 +287,96 @@ res85: kotlin.String = &gt;&gt;&gt;
 </div>
 
 <pre class="example">
-res87: kotlin.String = &gt;&gt;&gt; 
+res145: kotlin.String = &gt;&gt;&gt; 
 
 </pre>
+
+</section>
+</section>
+<section>
+<section id="slide-orgea4df59">
+<h2 id="orgea4df59">Live Vergleich</h2>
+<div class="outline-text-2" id="text-orgea4df59">
+</div>
+</section>
+<section id="slide-org92ba1c3">
+<h3 id="org92ba1c3">Java-Code</h3>
+<div class="org-src-container">
+
+<pre  class="src src-java"><code trim><span style="color: #fa9a4b; font-weight: bold;">public</span> <span style="color: #fa9a4b; font-weight: bold;">class</span> <span style="color: #72aaca;">Person</span> {
+    <span style="color: #fa9a4b; font-weight: bold;">private</span> <span style="color: #72aaca;">String</span> <span style="color: #f6f080;">surName</span>;
+    <span style="color: #fa9a4b; font-weight: bold;">private</span> <span style="color: #72aaca;">String</span> <span style="color: #f6f080;">familyName</span>;
+    <span style="color: #fa9a4b; font-weight: bold;">private</span> <span style="color: #72aaca;">int</span> <span style="color: #f6f080;">age</span>;
+
+    <span style="color: #fa9a4b; font-weight: bold;">public</span> <span style="color: #72aaca;">Person</span>(<span style="color: #72aaca;">String</span> <span style="color: #f6f080;">surName</span>, <span style="color: #72aaca;">String</span> <span style="color: #f6f080;">familyName</span>, <span style="color: #72aaca;">int</span> <span style="color: #f6f080;">age</span>) {
+        <span style="color: #fa9a4b; font-weight: bold;">this</span>.surName = surName;
+        <span style="color: #fa9a4b; font-weight: bold;">this</span>.familyName = familyName;
+        <span style="color: #fa9a4b; font-weight: bold;">this</span>.age = age;
+    }
+
+    <span style="color: #b9d977;">@Override</span>
+    <span style="color: #fa9a4b; font-weight: bold;">public</span> <span style="color: #72aaca;">String</span> <span style="color: #72aaca;">toString</span>(){
+        <span style="color: #fa9a4b; font-weight: bold;">return</span> <span style="color: #fa9a4b; font-weight: bold;">this</span>.surName + <span style="color: #cfe2f2;">" "</span> + <span style="color: #fa9a4b; font-weight: bold;">this</span>.familyName;
+    }
+
+    <span style="color: #fa9a4b; font-weight: bold;">public</span> <span style="color: #72aaca;">String</span> <span style="color: #72aaca;">getSurName</span>() {
+        <span style="color: #fa9a4b; font-weight: bold;">return</span> surName;
+    }
+
+    <span style="color: #fa9a4b; font-weight: bold;">public</span> <span style="color: #72aaca;">void</span> <span style="color: #72aaca;">setSurName</span>(<span style="color: #72aaca;">String</span> <span style="color: #f6f080;">surName</span>) {
+        <span style="color: #fa9a4b; font-weight: bold;">this</span>.surName = surName;
+    }
+
+    <span style="color: #fa9a4b; font-weight: bold;">public</span> <span style="color: #72aaca;">String</span> <span style="color: #72aaca;">getFamilyName</span>() {
+        <span style="color: #fa9a4b; font-weight: bold;">return</span> familyName;
+    }
+
+    <span style="color: #fa9a4b; font-weight: bold;">public</span> <span style="color: #72aaca;">void</span> <span style="color: #72aaca;">setFamilyName</span>(<span style="color: #72aaca;">String</span> <span style="color: #f6f080;">familyName</span>) {
+        <span style="color: #fa9a4b; font-weight: bold;">this</span>.familyName = familyName;
+    }
+
+    <span style="color: #fa9a4b; font-weight: bold;">public</span> <span style="color: #72aaca;">int</span> <span style="color: #72aaca;">getAge</span>() {
+        <span style="color: #fa9a4b; font-weight: bold;">return</span> age;
+    }
+
+    <span style="color: #fa9a4b; font-weight: bold;">public</span> <span style="color: #72aaca;">void</span> <span style="color: #72aaca;">setAge</span>(<span style="color: #72aaca;">int</span> <span style="color: #f6f080;">age</span>) {
+        <span style="color: #fa9a4b; font-weight: bold;">this</span>.age = age;
+    }
+}
+</code></pre>
+</div>
+
+</section>
+<section id="slide-org0a36d67">
+<h3 id="org0a36d67">Kotlin</h3>
+<div class="org-src-container">
+
+<pre  class="src src-kotlin"><code trim><span style="color: #fa9a4b; font-weight: bold;">class</span> <span style="color: #72aaca;">Person</span>(<span style="color: #fa9a4b; font-weight: bold;">var</span> <span style="color: #f6f080;">surName</span>: <span style="color: #72aaca;">String?</span>, <span style="color: #fa9a4b; font-weight: bold;">var</span> <span style="color: #f6f080;">familyName</span>: <span style="color: #72aaca;">String?</span>, <span style="color: #fa9a4b; font-weight: bold;">var</span> <span style="color: #f6f080;">age</span>: <span style="color: #72aaca;">Int</span>) {
+
+    <span style="color: #fa9a4b; font-weight: bold;">override</span> <span style="color: #fa9a4b; font-weight: bold;">fun</span> <span style="color: #72aaca;">toString</span>(): <span style="color: #72aaca;">String</span> {
+        <span style="color: #fa9a4b; font-weight: bold;">return</span> <span style="color: #fa9a4b; font-weight: bold;">this</span>.surName + <span style="color: #cfe2f2;">" "</span> + <span style="color: #fa9a4b; font-weight: bold;">this</span>.familyName
+    }
+}
+</code></pre>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org33b9264" data-background-video="videos/there is no need to be upset.mp4" data-background-video-muted="true" data-background-video-loop="true">
+<h2 id="org33b9264">Danke für die Aufmerksamkeit</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-org8bdca63">
+<h2 id="org8bdca63">Quellen</h2>
+<ul>
+<li><a href="https://medium.com/@magnus.chatt/why-you-should-totally-switch-to-kotlin-c7bbde9e10d5">https://medium.com/@magnus.chatt/why-you-should-totally-switch-to-kotlin-c7bbde9e10d5</a></li>
+<li><a href="https://blog.plan99.net/why-kotlin-is-my-next-programming-language-c25c001e26e3">https://blog.plan99.net/why-kotlin-is-my-next-programming-language-c25c001e26e3</a></li>
+<li><a href="https://medium.com/pinterest-engineering/kotlin-for-grumpy-java-developers-8e90875cb6ab">https://medium.com/pinterest-engineering/kotlin-for-grumpy-java-developers-8e90875cb6ab</a></li>
+
+</ul>
 </section>
 </section>
 </div>
