@@ -144,7 +144,7 @@ when (x) {
 : val x = b.length
 :          ^
 : 
-: res63: kotlin.String = >>> 
+: res75: kotlin.String = >>> 
 
 #+BEGIN_SRC kotlin :exports both
   val b: String? = "test"
@@ -154,4 +154,4 @@ when (x) {
 #+END_SRC
 
 #+RESULTS:
-: res67: kotlin.String = >>> 
+: res73: kotlin.String = >>> 
