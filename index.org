@@ -19,4 +19,139 @@
    - ...sie gute Language-Features besitzen
 * Introducing:
   [[./images/Kotlin.png]]
+* Main Features
+** Open Source, entwickelt von Jetbrains
+   #+ATTR_REVEAL: :frag (roll-in)
+   - sehr gute IDE-Integration
+   - Konstante Weiterentwicklung
+   - 2015 von Google zur Android-Entwicklung empfohlen
 ** Kotlin compiliert zu JVM-bytecode, Javascript und nativem Code!
+   #+ATTR_REVEAL: :frag (roll-in)
+   [[./images/pikachu.png]]
+
+* Language Features
+** String Interpolation
+#+BEGIN_SRC kotlin :exports both
+  val name = "Julius"
+  val age = 21
+  print("Mein Name ist $name und ich bin $age Jahre alt. ")
+#+END_SRC
+
+#+RESULTS:
+: Mein Name ist Julius und ich bin 21 Jahre alt. res9: kotlin.String = >>> 
+** Type Inference
+#+BEGIN_SRC kotlin
+  val a = "test"
+  val b = 4
+
+  val c: Double = 0.7
+#+END_SRC
+** Equals
+#+BEGIN_SRC kotlin
+  val a = Person("Julius")
+  val b = Person("Julius")
+
+  print(a == b)  //true
+  print(a === b) //false
+#+END_SRC
+
+** Default Arguments
+#+BEGIN_SRC kotlin
+  fun buildFrame(title: String, width: Int = 800, height: Int = 600) {
+
+	  Frame(title, width, height)
+
+  }
+
+#+END_SRC
+** Java: If/Switch
+#+BEGIN_SRC java
+  switch(x) {
+    case 1:
+	System.out.println("x is 1");
+      break;
+    case 2:
+	System.out.println("x is 1");
+      break;
+    case 3:
+    case 4:
+	System.out.println("x is 3 or 4");
+      break;
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+	System.out.println("x is 5, 6, 7, 8, 9, or 10");
+    default:
+	System.out.println("x is out of range");
+  }
+#+END_SRC
+** Kotlin: When
+#+BEGIN_SRC kotlin
+when (x) {
+    1 -> print("x is 1")
+    2 -> print("x is 2")
+    3, 4 -> print("x is 3 or 4")
+    in 5..10 -> print("x is 5, 6, 7, 8, 9, or 10")
+    else -> print("x is out of range")
+}
+#+END_SRC
+
+** Extension Functions
+#+BEGIN_SRC kotlin :exports both
+  fun String.replaceSpaces(): String {
+      return this.replace(' ', '_')
+  }
+  val str = "This is a test"
+  val formatted = str.replaceSpaces()
+  print("$formatted ")
+#+END_SRC
+
+#+RESULTS:
+: This_is_a_test res23: kotlin.String = >>> 
+
+** Null Safety 1
+#+BEGIN_SRC kotlin :exports both
+  var a: String = "abc"
+  a = null               
+#+END_SRC
+
+#+RESULTS:
+: [1;31merror: [0;1mnull can not be a value of a non-null type String[m
+: a = null               
+:     ^
+: 
+: res29: kotlin.String = >>> 
+
+#+BEGIN_SRC kotlin :exports both
+    var b: String? = "xyz"
+    b = null                
+#+END_SRC
+
+#+RESULTS:
+: res31: kotlin.String = >>> 
+
+** Null Safety 2
+#+BEGIN_SRC kotlin :exports both
+  val b: String? = "test"
+  val x = b.length
+#+END_SRC
+
+#+RESULTS:
+: [1;31merror: [0;1monly safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type String?[m
+: val x = b.length
+:          ^
+: 
+: res63: kotlin.String = >>> 
+
+#+BEGIN_SRC kotlin :exports both
+  val b: String? = "test"
+  if (b != null) {
+    val x = b.length
+  }
+#+END_SRC
+
+#+RESULTS:
+: res67: kotlin.String = >>> 
